@@ -1,0 +1,27 @@
+{
+  "name": "capsulecmdr/helionet-web",
+  "description": "Bare-bones HelioNET test plugin.",
+  "type": "helionet-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Capsulecmdr\\HelionetWeb\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Capsulecmdr\\HelionetWeb\\Providers\\HelionetWebServiceProvider"
+      ]
+    },
+    "helionet": {
+      "plugin": true
+    }
+  },
+  "require": {
+    "php": ">=8.2",
+    "laravel/framework": ">=11.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
